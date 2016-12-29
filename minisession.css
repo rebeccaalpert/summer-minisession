@@ -5,7 +5,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 250px;
+  margin-bottom: 450px;
   
 }
 .footer {
@@ -13,34 +13,129 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 250px;
+  height: 450px;
   background-color: #303C42;
 }
 
 /* Custom page CSS
 -------------------------------------------------- */
 body {
-	font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+	font-family: Gotham, "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+	margin-top: 200px;
 }
 
+
 h1 {
+	font-size: 28px;
+	line-height: 36px;
+	margin-bottom: 1em;
 	font-family: Gotham;
 }
 
+h1:first-of-type {
+	margin-bottom: 0em;
+}
+
+h1:last-of-type {
+	margin-top: 10px;
+}
+
 h2 {
+	font-size: 22px;
+	line-height: 36px;
+	margin-bottom: 1em;
 	font-family: Gotham;
 }
 	
 h3 {
+	font-size: 20px;
+	line-height: 36px;
 	font-family: Gotham;
 }
 
 p { 
 	font-family: Whitney, "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+	margin-bottom: 1em;
+	font-size: 16px;
+	line-height: 24px;
 }
+
+ul {
+	font-family: Whitney, "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}	
 
 .divider {
 	font-family: Gotham;
+	border-bottom: 1px solid #F38A00;
+	color: #F38A00;
+	font-size: 16px;
+	font-weight: 700;
+	padding-bottom: .5em;
+	margin-bottom: 40px;
+	margin-top: 0px;
+	padding-left: 0em;
+}
+
+.content-block {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.detail-block { 
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.register-block {
+	margin-bottom: 3em;
+}
+
+.col-md-6 {
+	padding-left: 0px;
+}
+
+.course {
+	background-color: #ffffff;
+	padding: 0px;
+}
+
+.course img { 
+	display: none;
+}
+
+.course h2 {
+	margin-top: 1.5em;
+}
+
+.yourEducator {
+	display: none;
+}
+
+.detail-block {
+	margin-bottom: 5em;
+}
+
+.detail-block:last-of-type {
+	margin-bottom: 0px;
+}
+	
+footer .btn {
+	background-color: #418fde;
+}
+
+.btn {
+	width: 100%;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #418fde;
+	border-radius: 0px;
+}
+
+.register-button-block .btn {
+	margin-top: 0px;
 }
 
 a:link, a:hover, a:visited, a:active {
@@ -64,19 +159,19 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .bottomSpace {
-	margin-bottom: 50px;
+	margin-bottom: 1.5em;
 }
 
 .content-block:last-of-type {
 	padding-bottom: 50px;
 }
 
-.row:first-of-type {
-	padding-top: 40px;
+.row {
+	margin-bottom: 40px;
 }
 
-.row {
-	margin-bottom: 80px;
+.row:first-of-type {
+	padding-top: 20px;
 }
 
 .row:last-of-type {
@@ -92,9 +187,36 @@ a:link, a:hover, a:visited, a:active {
 	margin-top: 0px;
 }
 
+.instructor {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #97AAC6;
+	padding: 10px;
+	text-align: center;
+}
+
+.yourEducator {
+	color: #ffffff;
+	background-color: #97AAC6;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.round {
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+	
+.rectangle {
+	width: 100%;
+} 
+
 /* Accordion */
 #accordion {
-	padding-top: 30px;
+	padding-top: 15px;
 }
 
 .panel-group .panel + .panel {
@@ -112,7 +234,6 @@ a:link, a:hover, a:visited, a:active {
 .panel-heading {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
-	padding: 15px;
 }
 
 .panel-heading > h3 {
@@ -126,6 +247,14 @@ a:link, a:hover, a:visited, a:active {
 	margin-bottom: 30px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
+}
+
+.panel-body > h3 {
+	margin-top: 0px;
+}
+
+.panel-body > p:last-of-type {
+	margin-bottom: 0px;
 }
 
 /* Nav */
@@ -145,16 +274,12 @@ a:link, a:hover, a:visited, a:active {
 .navbar-custom {
 	background-color: #3172AE;
 	border: none;
-}
-
-.navbar-custom .navbar-brand {
-	color: #ffffff;
-	font-size: 20px;
+	padding: 20px;
 }
 
 .navbar-custom #navbar li a {
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .navbar-custom #navbar li a:hover {
@@ -169,8 +294,20 @@ a:link, a:hover, a:visited, a:active {
 	background: #346094;
 }
 
-/* Footer */
+.navbar-custom #navbar li:last-of-type {
+	margin-right: 15px;
+}
 
+.navbar-brand {
+	width: 100%;
+	height: auto;
+}
+
+.navbar-right {
+	margin-top: 20px;
+}
+
+/* Footer */
 #footer {
    position:fixed;
    left:0px;
@@ -185,7 +322,8 @@ footer li {
 }
 
 .footer {
-	padding: 20px 0px;
+	text-align: center;
+	padding: 40px 0px;
 	background-color: #3172AE;
 }
 
@@ -213,11 +351,32 @@ footer ul {
 	padding: 0px;
 }
 
+footer img {
+	width: 80%;
+	margin-top: 50px;
+}
+
+.footer h3, .footer li {
+	text-align: left;
+}
+
+.footer h3 {
+	margin-top: 60px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+	
+.footer li {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
 /* Custom Buttons */
 .btn-blue { 
   color: #ffffff; 
   background-color: #3172AE; 
   border: none; 
+  font-size: 20px;
 } 
  
 .btn-blue:hover, 
@@ -267,87 +426,186 @@ fieldset[disabled] .btn-blue.active {
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-	body {
-		margin-bottom: 320px;
-		margin-top: 50px;
-	}
+/* HERO */
+.intro {
+	text-align: center;
+	padding: 0px;
+	padding-bottom: 40px;
+}
 	
-	.divider {
-		border-bottom: 1px solid #F38A00;
-		color: #F38A00;
-		font-size: 16px;
-		font-weight: 700;
-		padding-bottom: 1em;
-		margin-bottom: 80px;
-		margin-top: 80px;
-		padding-left: 0px;
-	}
+.intro img {
+	width: 80%;
+	height: auto%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	margin-bottom: 30px;
+	margin-top: 0px;
+}
 	
-	.content-block {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
+.large {
+	font-size: 36px;
+	line-height: 36px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
 	
-	.intro {
-		text-align: left;
-	}
+.medium {
+	font-size: 27px;
+	line-height: 36px;
+	margin-bottom: 0x;
+	margin-top: 0em;
+}
+
+.intro h2 {
+	margin-top: 0em;
+	font-size: 20px;
+	line-height: 28px;
+}
 	
-	.intro img {
-		text-align: center;
-	}
-	
-	p {
-		margin-bottom: 1em;
-		font-size: 18px;
-		line-height: 24px;
-	}
-	
-	.round {
-		width: 100%;
-		height: 100%;
-		-webkit-border-radius: 100%;
-		-moz-border-radius: 100%;
-		border-radius: 100%;
-	}
-	
-	.rectangle {
-		width: 100%;
-	} 
-	
-	.footer {
-		height: 320px;
-	} 
-	
-	.btn {
-		width: 100%;
-		padding: 20px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		background-color: #418fde;
-		border-radius: 0px;
-	}
+.intro p {
+	margin-top: 0px;
+	line-height: 26px;
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-
+	.navbar-brand {
+		width: 50%;
+		height: auto;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	body {
+		margin-top: 180px;
+	}
+	
+	.divider {
+		padding-left: 40px;
+	}
+	
+	.content-block {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	
+	.intro {
+		padding: 40px;
+	}
+	
+	.intro img {
+		width: 60%;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	
+	/* HERO */
+	.large {
+		font-size: 80px;
+		line-height: 80px;
+		font-weight: 700;
+	}
+	
+	.medium {
+		font-size: 60px;
+		line-height: 80px;
+		margin-bottom: 0px;
+	}
+	
+	.intro h2 {
+		margin-top: 2em;
+	}
+	
+	.navbar-brand {
+		width: 50%;
+		height: auto;
+	}
+	
+	.divider {
+		margin-top: 40px;
+	}
+	
+	.course:first-of-type {
+		margin-top: 60px;
+	}
+	
+	.course {
+		background-color: #f1f2f4;
+		padding: 30px;
+		margin-bottom: 60px;
+		position: relative;
+	}
+	
+	.course:last-of-type {
+		margin-bottom: 0px;
+	}
+	
+	.course h2 {
+		margin-top: 0px;
+	}
+	
+	.course-description p:last-of-type {
+		margin-bottom: 0px;
+	}
+	
+	.collapse p:first-of-type {
+		margin-top: 1em;
+	}
+	
+	.course .btn {
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
+	
+	.course img {
+		display: block;
+		position: absolute;
+		right: -20px;
+		top: -40px;
+		z-index: 1;
+		width: 10%;
+		height: auto;
+		min-width: 150px;
+		max-width:230px;
+	}
+	
+	.long {
+		padding-right: 100px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.long {
+		padding-right: 0px;
+	}
+	
 	body {
-		margin-bottom: 200px;
-		margin-top: 100px;
+		margin-bottom: 300px;
+		margin-top: 150px;
+	}
+	
+	#accordion {
+		padding-top: 30px;
+	}
+	
+	.navbar-brand {
+		width: 60%;
+		height: auto;
+		margin-left: 15px;
+		padding-top: 0px;
+		margin-top: 15px;
 	}
 	
 	.divider {
+		font-size: 16px;
+		padding-bottom: 1em;
+		margin-bottom: 80px;
+		margin-top: 80px;
 		padding-left: 50px;
 	}
 
@@ -356,46 +614,84 @@ fieldset[disabled] .btn-blue.active {
 		padding-right: 50px;
 	}
 	
+	.detail-block {
+		padding-left: 0px;
+		padding-right: 30px;
+	}
+	
+	.detail-block img {
+		padding-bottom: 15px;
+		margin-bottom: 0px;
+	}
+	
+	.row:first-of-type {
+		padding-top: 40px;
+	}
+	
+	.bottomSpace {
+		margin-bottom: 2em;
+	}
+	
+	h1:first-of-type {
+		margin-bottom: 0px;
+	}
+	
 	/* Hero */
 	.intro {
 		text-align: center;
-		padding: 40px;
+		padding: 60px;
 	}
 	
 	.intro img {
-		width: 160px;
+		display: inline-block;
+		width: 200px;
 		height: auto;
-		margin: 0px;
+		margin-top: 0px;
+		margin-bottom: 30px;
 	}
 	
 	.large {
-		font-size: 110px;
-		margin-bottom: 0px;
-		line-height: 90px;
+		font-size: 100px;
+		line-height: 100px;
 		font-weight: 700;
 		margin-top: 0.25em;
+		text-align: center;
+		margin-bottom: 0em;
 	}
 	
 	.medium {
 		font-size: 80px;
-		line-height: 90px;
-		margin-bottom: .25em;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	
+	.intro h2 {
+		font-size: 30px;
+		line-height: 48px;
+		margin-top: 0px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 	
 	.intro p {
 		font-size: 24px;
-		line-height: 28px;
+		line-height: 34px;
 	}
-	
+
 	.btn {
 		margin-top: 20px;
 		width: 280px;
 	}
+	
+	.detail-block, .register-block {
+		margin-bottom: 0em;
+	}
 
 	h1 {
 		font-size: 48px;
-		line-height: 60px;
+		line-height: 50px;
 		margin-bottom: 50px;
+		text-align: left;
 	}
 
 	h2 {
@@ -409,19 +705,115 @@ fieldset[disabled] .btn-blue.active {
 		line-height: 36px;
 	}
 	
+	p {
+		font-size: 20px;
+		line-height: 38px;
+	}
+	
+	ul {
+		font-size: 20px;
+		line-height: 38px;
+	}
+	
 	.round {
 		width: 183px;
 		height: 183px;
 	}
 	
+	.col-sm-10 h2 {
+		margin-top: 0px;
+	}
+	
 	.footer {
-		height: 150px;
+		height: 300px;
+	}
+	
+	.course:first-of-type {
+		margin-top: 120px;
+	}
+	
+	.course {
+		margin-bottom: 10em;
+		position: relative;
+		padding: 60px;
+		padding-right: 600px;
+	}
+	
+	.extraSpace {
+		margin-bottom: 13em;
+	}
+	
+	.course:last-of-type {
+		margin-bottom: 0px;
+	}
+	
+	.course img {
+		display: block;
+		position: absolute;
+		right: 190px;
+		top:-80px;
+		z-index: 1;
+		width: 15%;
+		height: auto;
+		min-width: 200px;
+		max-width:230px;
+	}
+	
+	.course-instructor {
+		margin-top: 60px;
+		margin-bottom: 30px;
+		padding: 0px;
+		text-align: left;
+		background-color: #ffffff;
+		position: absolute;
+		right: 100px;
+		top: 120px;
+		z-index: 1;
+		box-shadow: 10px 10px 5px #999999;
+		width: 400px;
+	}
+	
+	.yourEducator {
+		display: block;
+		padding: 15px;
+		padding-left: 30px;
+	}
+	
+	.educatorBio {
+		padding: 30px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	.educatorBio p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	.panel-heading {
+		padding: 20px;
+	}
+
+	.panel-body {
+		padding: 20px;
+	}
+}
+
+@media only screen and (min-width:1900px) {	
+	.course:first-of-type {
+		margin-top: 100px;
 	}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	body {
+		margin-bottom: 400px;
+	}
+	
+	footer {
+		height: 400px;
+	}
 }
 
 @media print {
