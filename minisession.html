@@ -12,12 +12,12 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="minisession.css" />
+    <link rel="stylesheet" type="text/css" href="minisessionv2.css" />
   </head>
 
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="" /></a>
+          <a href="#"><img src="Summer_MiniSession_white.png" class="navbar-brand" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -39,67 +39,155 @@
     </nav>
        
     <!-- MAIN PAGE -->
-    <div class="container-fluid intro"><img src="miniSession-refresh.png" class="image" />
+    <div class="container-fluid intro">
       <div class="col-xs-12">
-	    <h1 class="blue large">REFRESH</h1>
-            <h1 class="blue medium">your love of learning</h1>
-        <h2 class="orange bold">Come experience four days of world-class academics<br />
-          on one of America's most beautiful campuses.</h2>
-            <p>Summer MiniSession<br />July 27&ndash;31, 2017 | Tufts University Medford/Somerville Campus</p>
+      		<h1 class="blue large visible-xs visible-sm hidden-md hidden-lg">Refresh</h1>
+            <h1 class="blue medium visible-xs visible-sm hidden-md hidden-lg">your love of learning</h1>
+      		<img src="Image_Collage_With_Arrows.png" />
+            <h1 class="blue large visible-md visible-lg hidden-xs hidden-sm">Refresh</h1>
+            <h1 class="blue medium visible-md visible-lg hidden-xs hidden-sm">your love of learning</h1>
+        <h2 class="orange">Come experience four days of world-class academics on one of America's most beautiful campuses.</h2>
+          <h3 class="bold orange">Tufts Summer MiniSession</h3>
+            <p>July 27&ndash;31, 2017 | Tufts University Medford/Somerville Campus</p>
             <a href="#" class="btn btn-default btn-lg btn-blue">REGISTER</a>
         </div>
     </div>
     <div class="container-fluid" id="courses">
     	<div class="divider">COURSES</div>
-        <div class="col-xs-12 content-block">
-    		<h1 class="blue">Four fascinating days.<br />Four courses to choose from.<br /><span class="bold">One amazing academic experience.</span></h1>
-            <div class="row">
-            	<div class="col-sm-2">
-            	<img src="detail.jpg" class="round" />
-            	</div>
-            	<div class="col-sm-10">
-            		<h2 class="orange">Hot Topics and Controversies in Nutrition</h2>
-                	<p>Instructor:</p>
-                	<p>Short description</p>
-            	</div>
+    	  <div class="col-xs-12 content-block">
+    	    <h1 class="blue">Four compelling course options.</h1>
+    	    <h1 class="blue bold">One amazing academic experience.</h1>
+    	      <div class="course" id="nutrition-course">
+              <img src="course_1.jpg" id="nutrition-image" class="round" />
+    	        <h2 class="orange">Hot Topics and Controversies in Nutrition</h2>
+    	        <div class="course-instructor">
+    	          	<p class="yourEducator">Your Educator</p>
+    	          <div class="educatorBio">
+    	            <p><span class="orange bold">Dr. Edward Saltzman</span><br />
+    	              Academic Dean for Education<br />
+    	              Gerald J. and Dorothy R. Friedman School of Nutrition Science and Policy at Tufts University</p>
+                    </div>
+  	            </div>
+                <div class="course-description">
+    	        <p>Try this experiment: See if you can get through the next half-hour without seeing, hearing, reading, or talking about diet and nutrition. Every day, we're bombarded with messages about what, when, where, and how we should eat. Everyone&mdash;marketers, media personalities, friends and family, even total strangers&mdash;is ready and all too willing to offer an opinion. The only things that seem to be in short supply are facts.</p>
+    	        <button id="nutrition-collapse-button" class="btn btn-default btn-lg btn-blue">LEARN MORE</button>
+    	        <div id="nutrition" class="collapse">
+    	          <p>In this course, we'll explore several of the most controversial topics in nutrition today. We'll discuss the claims being made about a variety of diets and foods&mdash;and then we'll explore the science behind the claims to find the truth.</p>
+    	          <p>You'll gain a clear understanding of current hot topics including:</p>
+    	          <ul>
+    	            <li>Is saturated fat actually bad for you?</li>
+    	            <li>Gluten-free diets&mdash;who should consume them?</li>
+    	            <li>Are carbohydrates really the enemy?</li>
+    	            <li>How do the bacteria in your intestines influence your health, and what do you need to know about microbiota, probiotics, and prebiotics?</li>
+  	            </ul>
+    	          <p>Perhaps even more important, by the end of our four days together, you'll have acquired the critical framework you need to size up future controversies as they arise, separate fact from hype, and make informed decisions about your nutrition.</p>
+                <h4 class="orange bold">About Your Educator</h4>
+                <p>In addition to serving as Dean of Education and Associate Professor of Nutrition at the Friedman School, Dr. Saltzman is an Associate Professor of Medicine at Tufts University School of Medicine and is Chief of the Division of Clinical Nutrition at Tufts Medical Center. He's also a scientist at the Energy Metabolism Laboratory in the Jean Mayer USDA Human Nutrition Research Center on Aging. Dr. Saltzman's research focuses on obesity and body weight regulation in humans, including how the nutrient composition of food influences how much we eat.</p></div>
+  	          </div>
+           </div>
+    	      <div class="course extraSpace">
+              <img src="course_2.jpg" id="building-image" class="round" />
+    	        <h2 class="orange">The Art of Building</h2>
+    	        <div class="course-instructor">
+    	          	<p class="yourEducator">Your Educator</p>
+    	          <div class="educatorBio">
+    	            <p><span class="orange bold">Dr. Eric Hines</span><br />Professor of the Practice<br /> Department of Civil and Environmental Engineering<br />Tufts University School of Engineering </p>
+                    </div>
+  	            </div>
+                <div class="course-description">
+    	        <p>Structural design is more than an engineering discipline. It's a convergence of art and science, and it can tell us a lot about the human creative process. What will it reveal to you?</p>
+    	        <button id="building-collapse-button" class="btn btn-default btn-lg btn-blue">LEARN MORE</button>
+    	        <div id="building" class="collapse">
+    	          <p>Find out in four days this summer, as we explore:</p>
+    	          <ul>
+    	            <li>The history of structural design as an art form</li>
+    	            <li>Its relationship to architecture</li>
+    	            <li>Connections between structural form and architectural discourse from the 19th century to the present day</li>
+    	            <li>The work of key designers and writers who helped shape how the world thinks about structural design</li>
+    	            <li>Developments in structure and architecture according to their artistic significance, their ability to carry loads efficiently, and the social ramifications of their construction. </li>
+  	            </ul>
+    	          <p>Based on our discussions of historic structures, engineering innovations, scientific discoveries, and cultural history, we'll develop ideas about the present relationships between engineering, science, and architecture and their place in contemporary American society.</p>
+    	          <p>We'll look at all these issues in the context of three turning points that gave rise to our modern world&mdash;the Scientific Revolution, the Democratic Revolutions, and the Industrial Revolution.</p>
+    	          <p>You may never look at an I-beam, bridge abutment, or load-bearing wall the same way again. You'll definitely gain deep insights into the essential ideas that, in a quite literal sense, have given structure to the world in which we live.</p>
+    	          <h4 class="orange bold">Field Trips</h4>
+                  <p>Field trips require an additional activity fee, noted in the course registration fees.</p>
+
+				  <h4 class="orange bold">About Your Educator</h4>
+    	          
+    	          <p>Dr. Hines specializes in the design and renovation of building structures, and the development of renewable energy infrastructure. His research interests include construction and performance of offshore wind turbines, seismic performance of low-ductility structural systems in moderate seismic regions, inelastic behavior of reinforced concrete structures, and assessment of building system vibrations due to trains and human activity. In 2011, he received the Henry and Madeline Fischer Award, recognizing him as "Engineering's Teacher of the Year" at Tufts.</p>
+                  </div>
+  	          </div>
+  	        </div>
+    	      <div class="course">
+              <img src="course_3.jpg" id="building-image" class="round" />
+    	        <h2 class="orange">21st Century Museum Literacy</h2>
+    	        <div class="course-instructor">
+    	          	<p class="yourEducator">Your Educator</p>
+    	          <div class="educatorBio">
+    	            <p><span class="orange bold">Cynthia Robinson</span><br />Lecturer and Director of Museum Studies<br />Tufts University School of Arts and Sciences </p>
+                    </div>
+  	            </div>
+                <div class="course-description">
+    	        <p>In an era of ever-shortening attention spans, can museums hope to stay relevant?</p>
+    	        <p>Absolutely&mdash;but first, they have to shed their traditional role of simply collecting and displaying, and move aggressively to engage visitors with art, objects, experts, and one another. </p>
+    	        <button id="museum-collapse-button" class="btn btn-default btn-lg btn-blue">LEARN MORE</button>
+    	        <div id="museum" class="collapse">
+    	          <p>That's exactly what's been happening in the museum revolution that's taken place over the past 25 years. As places of free-choice and life-long learning, museums today offer specialized opportunities geared to a myriad of audiences, including:</p>
+    	          <ul>
+    	            <li>Early learners</li>
+    	            <li>Teens</li>
+    	            <li>Professionals in the workforce</li>
+    	            <li>Retirees</li>
+    	            <li>Individuals with dementia and caregivers</li>
+  	            </ul>
+    	          <p>In "21st Century Museum Literacy," you'll get an inside look at this transformational effort and at how today's museums develop exhibitions and interpretive strategies, while addressing social, civic, and personal matters. In addition, you'll develop skills in material culture analysis and visual literacy that will help you make the most of every museum you visit from now on.</p>
+    	          <h4 class="orange bold">Field Trips</h4>
+                  <p>We'll take full advantage of the fact that some of the world's greatest art and history museums are within easy driving distance of Tufts' Medford/Somerville campus. We'll interact with experts at the museums and enjoy behind-the-scene glimpses of the museum world. Field trips require an additional activity fee, noted in the course registration fees.</p>
+    	          <h4 class="orange bold">About Your Educator</h4>
+    	          <p>Cynthia Robinson focuses on a range of museum issues, including training the next generation of leaders, helping history museums become more relevant to modern audiences, and improving interpretation strategies to reach broader and more diverse audiences. Before coming to Tufts, she spent 25 years working in museums and gaining extensive experience in developing museum programs, curricula, and exhibitions, as well as in museum management and administration. She is editor in chief of the <em>Journal of Museum Education</em>. </p></div>
+  	          </div></div>
+    	      <div class="course">
+              <img src="course_4.jpg" id="building-image" class="round" />
+    	        <h2 class="orange long">Strategy and Innovation in the Context of a Changing World</h2>
+    	        <div class="course-instructor">
+    	          	<p class="yourEducator">Your Educator</p>
+    	          <div class="educatorBio">
+    	            <p><span class="orange bold">Dr. Bhaskar Chakravorti</span><br />Senior Associate Dean<br />International Business and Finance<br />The Fletcher School of Law and Diplomacy at Tufts University</p>
+                    </div>
+  	            </div>
+                <div class="course-description">
+    	        <p>Life is a series of strategic choices. That's equally true for individuals and for organizations that operate in a global context. Ultimately, success often comes down to one's ability to make the right decisions and innovate to solve problems. Unfortunately, the only way to master those skills has been through experience&mdash;usually the painful kind.</p>
+    	        <button id="strategy-collapse-button" class="btn btn-default btn-lg btn-blue">LEARN MORE</button>
+    	        <div id="strategy" class="collapse">
+    	          <p>This summer, you'll have a better way to learn. In "Strategy and Innovation in the Context of a Changing World," you'll discover how to:</p>
+    	          <ul>
+    	            <li>Make choices and evaluate tradeoffs to create distinctive value and establish sustainable competitive advantage</li>
+    	            <li>Choose wisely in conjunction with the innovation process</li>
+    	            <li>Arrive at innovative decisions in the context of a rapidly evolving world with shifting centers of economic gravity</li>
+  	            </ul>
+    	          <p>You'll also gain insights into four broad phenomena that profoundly affect the rules of strategy and innovation:</p>
+    	          <ul>
+    	            <li>The pursuit of competitive advantage and the need to deal with disruption</li>
+    	            <li>The emergence of a global consuming class</li>
+    	            <li>The growing urgency to fulfill unmet needs of the "bottom of the pyramid" in a sustainable way</li>
+    	            <li>The increasing internationalization of enterprises seeking growth opportunities across borders</li>
+  	            </ul>
+    	          <p>You'll learn inductively through a series of intense case discussions. As you learn, you'll develop your own decision-making framework and practice the skills you need to make great choices in real-world situations.</p>
+
+    	          <h4 class="orange bold">About Your Educator</h4>
+    	          <p>In addition to being Fletcher's Professor of the Practice of International Business, Dr. Chakravorti is the founding Executive Director of Fletcher's Institute for Business in the Global Context. He also directs the Council on Emerging Market Enterprises and serves on the World Economic Forum's Global Future Council on Innovation and Entrepreneurship and has advisory appointments at the UNDP, Brookings India, and Mastercard. A former Partner at McKinsey, faculty member of Harvard Business School, and Distinguished Scholar at MIT, he has completed work that has influenced policy making from Capitol Hill to the FCC and CEOs, Boards, and senior executives at more than 30 companies in the Fortune 500. He has authored numerous works of thought leadership in leading academic journals and books, as well as in the media. He has authored the best-selling book <em>The Slow Pace of Fast Change: Bringing Innovations to Market in a Connected World</em>.</p>
+                  </div>
+                  </div>
+  	          </div>
+  	        </div>
             </div>
-            <div class="row">
-            	<div class="col-sm-2">
-            	<img src="detail.jpg" class="round" />
-            	</div>
-            	<div class="col-sm-10">
-            		<h2 class="orange">The Art of Building</h2>
-                	<p>Instructor:</p>
-                	<p>Short description</p>
-            	</div>
-            </div>
-            <div class="row">
-            	<div class="col-sm-2">
-            	<img src="detail.jpg" class="round" />
-            	</div>
-            	<div class="col-sm-10">
-            		<h2 class="orange">21st Century Museum Literacy</h2>
-                	<p>Instructor:</p>
-                	<p>Short description</p>
-            	</div>
-            </div>
-            <div class="row">
-            	<div class="col-sm-2">
-            	<img src="detail.jpg" class="round" />
-            	</div>
-            	<div class="col-sm-10">
-            		<h2 class="orange">Strategy and Innovation in the Context of a Changing World</h2>
-                	<p>Instructor:</p>
-                	<p>Short description</p>
-            	</div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" id="schedule">
+</div>
+            <div class="container-fluid" id="schedule">
     	<div class="divider">EXPERIENCE</div>
     	<div class="col-xs-12 content-block">
-        	<h1 class="blue">It's not just academic.<br /><span class="bold">It's the ultimate mental break.</span></h1>
-        <p class="bottomSpace">Your Tufts Summer MiniSession is a lot more than a singular learning opportunity. Think of this as your chance to refresh your mind in all kinds of ways, whether that means embracing new ideas, socializing with others who are as into learning as you are, or reliving your college glory days.</p>
+        	<h1 class="blue">It's not just academic.</h1>
+       	  <h1 class="bold blue">It's the ultimate mental refresh.</h1>
+        <p class="bottomSpace">Your Tufts Summer MiniSession is a lot more than a singular learning opportunity. Think of this as your chance to refresh your mind in all kinds of ways, whether that means embracing new ideas, socializing with others, or reliving your college glory days.</p>
         <h2 class="orange">Here's a quick preview of your four-day MiniSession itinerary:</h2>
         <div class="panel-group" id="accordion">
   			<div class="panel panel-default">
@@ -107,101 +195,109 @@
     			</div>
     			<div id="collapse1" class="panel-collapse collapse in">
       				<div class="panel-body">
-      					<h3 class="orange bold">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-        				<p>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p></div>
+      					<h3 class="orange bold">Check-in and Orientation</h3>
+        				<p>Upon arriving at Tufts' magnificent undergraduate campus, you'll be shown to your dorm room in Harleston Hall (formerly South Hall.) Once you've settled in and had dinner, you're invited to a special orientation session, followed by a Social Hour with short talks by all four MiniSession professors. You'll have the rest of the evening free to get to know your fellow MiniSession attendees or stroll around campus.</p></div>
     			</div>
  			 </div>
   			<div class="panel panel-default">
                 <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h3 class="white bold">Friday, July 28</h3></div>
                 <div id="collapse2" class="panel-collapse collapse">
-                  <div class="panel-body"><h3 class="orange bold">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-        				<p>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p></div>
+                  <div class="panel-body"><h3 class="orange bold">First Day of Classes</h3>
+        				<p>After breakfast, you'll head to your classroom for the morning. A two-hour lunch break will give you a chance to catch up with classmates and enjoy some New England summer weather. Then it's back for your afternoon session.</p>
+                        <p>After class, you will have the chance to join the choir or attend a Film Talk. After dinner, you can choose to join us for a Social Hour or explore all that Boston has to offer.</p></div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h3 class="white bold">Saturday, July 29</h3></div>
                 <div id="collapse3" class="panel-collapse collapse">
-                  <div class="panel-body"><h3 class="orange bold">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-        				<p>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p></div>
+                  <div class="panel-body"><h3 class="orange bold">Good news. No mid-terms.</h3>
+        				<p>During your morning and afternoon sessions, you'll delve deeper into your topic. Later, feel free to relax or take a guided campus walking tour. We hope you will join us after dinner for another Social Hour with a special guest. Once again, the night is yours to enjoy any way you see fit. </p></div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4"><h3 class="white bold">Sunday, July 30</h3></div>
                 <div id="collapse4" class="panel-collapse collapse">
-                  <div class="panel-body"><h3 class="orange bold">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-        				<p>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p></div>
+                  <div class="panel-body"><h3 class="orange bold">By day, avid student. By night, cocktail party <em>bon vivant</em>.</h3>
+        				<p>Let's face it, a full day of studying a fascinating topic with world-renowned faculty can be thirsty work. That's why you'll be spending Sunday night at a Gala, complete with delicious food and drink, scintillating conversation, and a dynamite performance by fellow MiniSession attendees.</p></div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse5"><h3 class="white bold">Monday, July 31</h3></div>
                 <div id="collapse5" class="panel-collapse collapse">
-                  <div class="panel-body"><h3 class="orange bold">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-        				<p>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p></div>
+                  <div class="panel-body"><h3 class="orange bold">Key Takeaways and Fond Farewells</h3>
+        				<p>At your final morning session, your professor will help you and your classmates draw important conclusions from what you've studied over the past four days. The lessons you'll learn will stay with you for the rest of your life, and chances are that during your MiniSession, you'll have made some lasting friendships as well. At lunch, you can catch up with friends one more time before you bid them and Tufts adieu&mdash;until Summer 2018, perhaps?</p></div>
                 </div>
               </div>
             </div> 
         </div>
     </div>
+    
     <div class="container-fluid" id="details">
-    	<div class="divider">ROOM AND BOARD: THE DETAILS</div>
-    	<div class="col-xs-12 content-block">
-            <div class="col-sm-3">
-                <img src="detail.jpg" class="rectangle" />
-                <h2 class="orange bold">your dorm</h2>
-                <p>All rooms are in Harleston Hall (formerly South Hall) and feature air conditioning, free Wi-Fi, shared bathrooms, electronic security, on-site dorm manager, and 24-hour access</p>
-            </div>
-            <div class="col-sm-3">
-                <img src="detail.jpg" class="rectangle" />
-                <h2 class="orange bold">meal plan</h2>
-                <p>You’ll enjoy 11 meals (dinner on Thursday night; breakfast, lunch and dinner Friday and Saturday; breakfast and lunch Sunday and Monday) at Tufts’ award-winning Dewick-MacPhie Dining Center. Sunday night dinner will be served at the Gala.</p>
-            </div>
-            <div class="col-sm-3">
-                <img src="detail.jpg" class="rectangle" />
+    <div class="divider">ROOM AND BOARD: THE DETAILS</div>
+    	<div class="content-block">
+    	    <div class="col-md-3 detail-block"> 
+            <img src="dorms.jpg" class="rectangle" />
+    	      <h2 class="orange bold">your dorm</h2>
+    	      <p>All rooms are in Harleston Hall (formerly South Hall) and feature air conditioning, free Wi-Fi, shared bathrooms, electronic security, on-site dorm manager, and 24-hour access. Your on-campus residence gives you access to amenities such as the gym, recreational facilities, and the library.</p>
+  	      </div>
+    	  <div class="col-md-3 detail-block">
+              <img src="meal_plan.jpg" class="rectangle" />
+            <h2 class="orange bold">meal plan</h2>
+                <p>You'll enjoy 11 meals (dinner on Thursday night; breakfast, lunch, and dinner Friday and Saturday; breakfast and lunch Sunday and Monday) at Tufts' award-winning Dewick-MacPhie Dining Center. Sunday night dinner will be served at the Gala.</p>
+          </div>
+            <div class="col-md-3 detail-block">
+                <img src="field_trips.jpg" class="rectangle" />
                 <h2 class="orange bold">field trips</h2>
-                <p>If your class takes a field trip, you’ll be provided with a delectable box lunch.  
-    An additional activity fee is required for field trips. Please see the course registration guide for details.</p>
+                <p>If your class takes a field trip, you'll be provided with a delectable lunch and transportation. An additional activity fee is required for the two courses with field trips, which are a critical component of these courses.</p>
         	</div>
-        	<div class="col-sm-3">
-        		<img src="detail.jpg" class="rectangle" />
+        	<div class="col-md-3 detail-block">
+        		<img src="minimum_age.jpg" class="rectangle" />
         		<h2 class="orange bold">minimum age</h2>
             	<p>The Tufts Summer MiniSession program is for adults only.  You must be at least 21 years old to attend. While we love children as much as you do, we are not currently offering child care or youth programs.</p>
         	</div>
-        </div>
+      </div>
     </div>
     <div class="container-fluid" id="register">
     	<div class="divider">REGISTER</div>
         <div class="content-block ">
-        	<div class="col-sm-6">
-        	<p>Space for the 2017 Tufts Summer MiniSession is limited and enrollment is first come, first served. Don’t miss out on this unique opportunity to join an eminent authority and fellow lovers of learning in exploring the most fascinating topics of our time.</p>
+        	<div class="col-md-6 register-block">
+        	<p>Space for the 2017 Tufts Summer MiniSession is limited and enrollment is first come, first served. Don't miss out on this unique opportunity to join eminent faculty and fellow lovers of learning in exploring some of the most fascinating topics of our time.</p>
         	</div>
-        	<div class="col-sm-6 text-center">
+        	<div class="col-md-6 text-center register-button-block">
         	<a href="#" class="btn btn-default btn-lg btn-blue">REGISTER NOW</a>
         	</div>
         </div>
     </div>
     <div class="container-fluid" id="sponsors">
     	<div class="divider">SPONSORS</div>
-        <div class="col-xs-12 content-block">
-    		<h2 class="blue">The 2017 Tufts Summer MiniSession is made possible through the generosity of these sponsors:</h2>
-        	<p>Tufts University Alumni Association<br />Provost's Office<br />
-Dean of the School of Arts and Sciences<br />
-Dean of the School of Engineering<br />
-Dean of the Fletcher School of Law and Diplomacy<br />
-Dean of the Gerald J. and Dorothy R. Friedman School of Nutrition Science and Policy</p>
-		</div>
-	</div>
+    	<div class="col-xs-12 content-block">
+    	    <h2 class="blue">The 2017 Tufts Summer MiniSession is made possible through the generosity of these sponsors:</h2>
+   	      <p>Tufts University Alumni Association<br />
+    	      Provost's Office<br />
+    	      Dean of the School of Arts and Sciences<br />
+    	      Dean of the School of Engineering<br />
+    	      Dean of the Fletcher School of Law and Diplomacy<br />
+    	      Dean of the Gerald J. and Dorothy R. Friedman School of Nutrition Science and Policy<br />
+   	        Office of Business Development</p>
+  	    </div>
+    	</div>
+    </div>
 
     <footer class="footer">
     	<div class="container">
         	<div class="col-sm-12 visible-xs visible-sm hidden-md hidden-lg">
-           		<a href="#" class="btn btn-default btn-lg btn-blue">Register for Tufts Summer MiniSession</a>
+           		<a href="#" class="btn btn-default btn-lg btn-blue">REGISTER NOW</a>
             </div>
-            <div class="col-sm-12"> 
-        		<h3 class="bold">Contact Us</h3>
-                <ul>
-                	<li>Email: </li>
-            		<li>Phone: </li>
-                </ul>
+            <div class="row">
+            	<div class="col-sm-6">
+                <img src="joint_logo.png" /></div>
+            	<div class="col-sm-6"> 
+        			<h3 class="bold">Contact Us</h3>
+                    <ul>
+                        <li>Email: <a href="mailto:summerminisession@tufts.edu">summerminisession@tufts.edu</a></li>
+                        <li>Phone: <a href="tel:617-627-2278">617-627-2278</a> or <a href="tel:1-800-843-2586">1-800-843-2586</a></li>
+                    </ul>
+                </div>
             </div>
     	</div>
     </footer>
@@ -214,7 +310,34 @@ Dean of the Gerald J. and Dorothy R. Friedman School of Nutrition Science and Po
   
   <!-- Custom page behavior -->
   <script>
+		$( document ).ready(function() {
+			$("#nutrition-collapse-button").click(function(event) {
+				event.preventDefault();
+				showEventDetails("#nutrition-collapse-button", "#nutrition");
+			});
 			
+			$("#building-collapse-button").click(function(event) {
+				event.preventDefault();
+				showEventDetails("#building-collapse-button", "#building");
+			});
+			
+			$("#museum-collapse-button").click(function(event) {
+				event.preventDefault();
+				showEventDetails("#museum-collapse-button", "#museum");
+			});
+			
+			$("#strategy-collapse-button").click(function(event) {
+				event.preventDefault();
+				showEventDetails("#strategy-collapse-button", "#strategy");
+			});
+		});
+		
+		function showEventDetails(button, details) {
+			$(button).fadeOut(function() {	
+				//animation complete
+				$(details).fadeIn("slow");
+			});
+		}
   </script>
   </body>
 </html>
