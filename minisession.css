@@ -96,16 +96,21 @@ ul {
 	padding-left: 0px;
 }
 
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
 .course {
 	background-color: #f1f2f4;
 	padding: 20px;
-	padding-top: 120px;
-	margin-bottom: 150px;
+	padding-top: 80px;
+	margin-bottom: 100px;
 	position: relative;
 }
 
 .course:first-of-type {
-	margin-top: 150px;
+	margin-top: 100px;
 }
 
 .course:last-of-type {
@@ -137,10 +142,10 @@ ul {
 	left: 0;
 	right: 0;
 	z-index: 1;
-	top: -100px;
-	width: 30%;
+	top: -60px;
+	width: 20%;
 	height: auto;
-	min-width: 200px;
+	min-width: 100px;
 	max-width: 250px;
 }
 
@@ -334,7 +339,7 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .navbar-brand {
-	width: 100%;
+	width: 60%;
 	height: auto;
 }
 
@@ -613,6 +618,11 @@ fieldset[disabled] .btn-blue.active {
 	
 	.long {
 		padding-right: 100px;
+	}
+	
+	.container-fluid {
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
 
