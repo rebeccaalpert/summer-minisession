@@ -20,7 +20,7 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 body {
-	font-family: Gotham, "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+	font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
 	margin-top: 140px;
 }
 
@@ -29,7 +29,8 @@ h1 {
 	font-size: 28px;
 	line-height: 36px;
 	margin-bottom: 1em;
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
 h1:first-of-type {
@@ -44,30 +45,34 @@ h2 {
 	font-size: 22px;
 	line-height: 36px;
 	margin-bottom: 1em;
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 	
 h3 {
 	font-size: 20px;
 	line-height: 36px;
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
 p { 
-	font-family: Whitney, "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
 	margin-bottom: 1em;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 400;
 }
 
 ul {
-	font-family: Whitney, "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 400;
 }	
 
 .divider {
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
 	border-bottom: 1px solid #F38A00;
 	color: #F38A00;
 	font-size: 16px;
@@ -97,9 +102,8 @@ ul {
 }
 
 .course {
-	background-color: #ffffff;
-	padding: 0px;
-	padding-top: 0px;
+	background-color: #F1F2F4;
+	padding: 20px;
 	margin-bottom: 40px;
 }
 
@@ -265,7 +269,7 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .panel-body {
-	background-color: #f3f4f8;
+	background-color: #F1F2F4;
 	border-top: 0px;
 	margin-bottom: 30px;
 	border-bottom-left-radius: 0px;
@@ -613,7 +617,7 @@ fieldset[disabled] .btn-blue.active {
 	
 	body {
 		margin-bottom: 300px;
-		margin-top: 150px;
+		margin-top: 100px;
 	}
 	
 	#accordion {
