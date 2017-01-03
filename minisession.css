@@ -20,8 +20,8 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 body {
-	font-family: Gotham, "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-	margin-top: 200px;
+	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	margin-top: 100px;
 }
 
 
@@ -29,7 +29,8 @@ h1 {
 	font-size: 28px;
 	line-height: 36px;
 	margin-bottom: 1em;
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
 h1:first-of-type {
@@ -38,39 +39,44 @@ h1:first-of-type {
 
 h1:last-of-type {
 	margin-top: 10px;
+	margin-bottom: 2em;
 }
 
 h2 {
 	font-size: 22px;
 	line-height: 36px;
 	margin-bottom: 1em;
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 	
 h3 {
 	font-size: 20px;
 	line-height: 36px;
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
 p { 
-	font-family: Whitney, "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Whitney, Helvetica, Arial, sans-serif;
 	margin-bottom: 1em;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 400;
 }
 
 ul {
-	font-family: Whitney, "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Whitney, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 400;
 }	
 
 .divider {
-	font-family: Gotham;
+	font-family: "Gotham SSm A", "Gotham SSm B", Whitney, Helvetica, Arial, sans-serif;
 	border-bottom: 1px solid #F38A00;
 	color: #F38A00;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
 	padding-bottom: .5em;
 	margin-bottom: 40px;
@@ -97,16 +103,38 @@ ul {
 }
 
 .course {
-	background-color: #ffffff;
-	padding: 0px;
+	background-color: #F1F2F4;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.course:first-of-type {
+	margin-top: 20px;
+}
+
+.course:last-of-type {
+	margin-bottom: 0px;
+}
+	
+.course h2 {
+	margin-top: 10px;
+}
+	
+.course-description p:last-of-type {
+	margin-bottom: 0px;
+}
+	
+.extended-description p:first-of-type {
+	margin-top: 1em;
+}
+	
+.course .btn {
+	margin-bottom: 10px;
+	margin-top: 30px;
 }
 
 .course img { 
 	display: none;
-}
-
-.course h2 {
-	margin-top: 1.5em;
 }
 
 .yourEducator {
@@ -242,7 +270,7 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .panel-body {
-	background-color: #f3f4f8;
+	background-color: #F1F2F4;
 	border-top: 0px;
 	margin-bottom: 30px;
 	border-bottom-left-radius: 0px;
@@ -259,8 +287,9 @@ a:link, a:hover, a:visited, a:active {
 
 /* Nav */
 .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: #3172AE;
-	border: none;
+    background-color: #2A5C89;
+	border: 4px solid #2A5C89;
+	border-radius: 0px;
 }
 
 .navbar-inverse .navbar-collapse {
@@ -274,7 +303,7 @@ a:link, a:hover, a:visited, a:active {
 .navbar-custom {
 	background-color: #3172AE;
 	border: none;
-	padding: 20px;
+	padding: 0px;
 }
 
 .navbar-custom #navbar li a {
@@ -299,8 +328,9 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .navbar-brand {
-	width: 100%;
+	width: 60%;
 	height: auto;
+	max-width: 200px;
 }
 
 .navbar-right {
@@ -434,8 +464,10 @@ fieldset[disabled] .btn-blue.active {
 }
 	
 .intro img {
-	width: 80%;
+	width: 40%;
 	height: auto%;
+	min-width: 200px;
+	max-width: 200px;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
@@ -475,13 +507,14 @@ fieldset[disabled] .btn-blue.active {
 	.navbar-brand {
 		width: 50%;
 		height: auto;
+		max-width: 200px;
 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 	body {
-		margin-top: 180px;
+		margin-top: 100px;
 	}
 	
 	.divider {
@@ -498,31 +531,41 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.intro img {
-		width: 60%;
-		margin-top: 30px;
-		margin-bottom: 0px;
+		width: 150px;
+		min-width: 150px;
+		height: auto;
+		margin-top: 0px;
+		margin-bottom: 40px;
 	}
 	
 	/* HERO */
 	.large {
-		font-size: 80px;
+		font-size: 90px;
 		line-height: 80px;
 		font-weight: 700;
 	}
 	
 	.medium {
-		font-size: 60px;
+		font-size: 70px;
 		line-height: 80px;
 		margin-bottom: 0px;
 	}
 	
+	.intro h1:last-of-type {
+		margin-bottom: .35em;
+	}
+	
 	.intro h2 {
-		margin-top: 2em;
+		margin-top: 0em;
+		margin-left: 0px;
+		margin-right: 0px;
+		font-size: 30px;
 	}
 	
 	.navbar-brand {
 		width: 50%;
 		height: auto;
+		max-width: 400px;
 	}
 	
 	.divider {
@@ -566,11 +609,14 @@ fieldset[disabled] .btn-blue.active {
 		position: absolute;
 		right: -20px;
 		top: -40px;
+		left: auto;
 		z-index: 1;
 		width: 10%;
 		height: auto;
 		min-width: 150px;
 		max-width:230px;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	
 	.long {
@@ -586,7 +632,7 @@ fieldset[disabled] .btn-blue.active {
 	
 	body {
 		margin-bottom: 300px;
-		margin-top: 150px;
+		margin-top: 80px;
 	}
 	
 	#accordion {
@@ -636,6 +682,10 @@ fieldset[disabled] .btn-blue.active {
 		margin-bottom: 0px;
 	}
 	
+	h1:last-of-type {
+		margin-bottom: 1em;
+	}
+	
 	/* Hero */
 	.intro {
 		text-align: center;
@@ -647,7 +697,7 @@ fieldset[disabled] .btn-blue.active {
 		width: 200px;
 		height: auto;
 		margin-top: 0px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	
 	.large {
@@ -665,12 +715,16 @@ fieldset[disabled] .btn-blue.active {
 		margin-bottom: 40px;
 	}
 	
+	.intro h1:last-of-type {
+		margin-bottom: .4em;
+	}
+
 	.intro h2 {
 		font-size: 30px;
 		line-height: 48px;
 		margin-top: 0px;
-		padding-left: 40px;
-		padding-right: 40px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 	
 	.intro p {
@@ -802,6 +856,11 @@ fieldset[disabled] .btn-blue.active {
 @media only screen and (min-width:1900px) {	
 	.course:first-of-type {
 		margin-top: 100px;
+	}
+	
+	.intro h2 {
+		margin-left: 280px;
+		margin-right: 280px;
 	}
 }
 
