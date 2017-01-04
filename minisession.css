@@ -20,7 +20,7 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 body {
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	margin-top: 100px;
 }
 
@@ -29,7 +29,7 @@ h1 {
 	font-size: 28px;
 	line-height: 36px;
 	margin-bottom: 1em;
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 }
 
@@ -46,14 +46,14 @@ h2 {
 	font-size: 22px;
 	line-height: 36px;
 	margin-bottom: 1em;
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 }
 	
 h3 {
 	font-size: 20px;
 	line-height: 36px;
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 }
 
@@ -66,14 +66,14 @@ p {
 }
 
 ul {
-	font-family: "Whitney SSm A", "Whitney SSm B", Whitney, Helvetica, Arial, sans-serif;
+	font-family: "Whitney A", "Whitney B", Whitney, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 }	
 
 .divider {
-	font-family: "Gotham SSm A", "Gotham SSm B", Whitney, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	border-bottom: 1px solid #F38A00;
 	color: #F38A00;
 	font-size: 14px;
