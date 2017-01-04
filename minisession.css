@@ -786,7 +786,22 @@ fieldset[disabled] .btn-blue.active {
 		margin-bottom: 10em;
 		position: relative;
 		padding: 60px;
-		padding-right: 600px;
+	}
+	
+	.course h2 {
+		margin-right: 350px;
+	}
+	
+	.course-top {
+		margin-right: 350px;
+	}
+	
+	.extended-description .extra-padding {
+		padding-right: 350px;
+	}
+	
+	.extended-description .course-top {
+		margin-right: 0px;
 	}
 	
 	.extraSpace {
@@ -800,7 +815,7 @@ fieldset[disabled] .btn-blue.active {
 	.course img {
 		display: block;
 		position: absolute;
-		right: 190px;
+		right: 130px;
 		top:-80px;
 		z-index: 1;
 		width: 15%;
@@ -816,11 +831,11 @@ fieldset[disabled] .btn-blue.active {
 		text-align: left;
 		background-color: #ffffff;
 		position: absolute;
-		right: 100px;
+		right: 90px;
 		top: 120px;
 		z-index: 1;
 		box-shadow: 10px 10px 5px #999999;
-		width: 400px;
+		width: 250px;
 	}
 	
 	.yourEducator {
@@ -846,6 +861,60 @@ fieldset[disabled] .btn-blue.active {
 
 	.panel-body {
 		padding: 20px;
+	}
+}
+
+@media only screen and (min-width: 1090px) {
+	.course-instructor {
+		top: 100px;
+	}
+}
+
+@media only screen and (min-width: 1130px) {
+	.extended-description .course-top {
+		margin-right: 325px;
+	}
+	
+	.course-instructor {
+		right: 80px;
+		top: 100px;
+	}
+	
+	.course img {
+		right: 120px;
+	}
+	
+	.extended-description .extra-padding {
+		padding-right: 325px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.course h2 {
+		margin-right: 400px;
+	}
+	
+	.course-top {
+		margin-right: 500px;
+	}
+	
+	.extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	.extended-description .extra-padding {
+		padding-right: 500px;
+	}
+
+	.course img {
+		right: 180px;
+		top:-80px;
+	}
+	
+	.course-instructor {
+		right: 90px;
+		top: 130px;
+		width: 400px;
 	}
 }
 
