@@ -509,7 +509,7 @@ fieldset[disabled] .btn-blue.active {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 	body {
-		margin-top: 100px;
+		margin-top: 130px;
 	}
 	
 	.divider {
@@ -535,13 +535,13 @@ fieldset[disabled] .btn-blue.active {
 	
 	/* HERO */
 	.large {
-		font-size: 90px;
+		font-size: 80px;
 		line-height: 80px;
 		font-weight: 700;
 	}
 	
 	.medium {
-		font-size: 70px;
+		font-size: 60px;
 		line-height: 80px;
 		margin-bottom: 0px;
 	}
@@ -555,6 +555,7 @@ fieldset[disabled] .btn-blue.active {
 		margin-left: 0px;
 		margin-right: 0px;
 		font-size: 30px;
+		line-height: 46px;
 	}
 	
 	.navbar-brand {
