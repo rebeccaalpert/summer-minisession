@@ -261,6 +261,7 @@ a:link, a:hover, a:visited, a:active {
 .panel-heading {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
+	cursor: pointer;
 }
 
 .panel-heading > h3 {
