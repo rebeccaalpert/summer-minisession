@@ -464,7 +464,7 @@ fieldset[disabled] .btn-blue.active {
 	
 .intro img {
 	width: 40%;
-	height: auto%;
+	height: auto;
 	min-width: 200px;
 	max-width: 200px;
 	-webkit-border-radius: 100%;
@@ -473,7 +473,7 @@ fieldset[disabled] .btn-blue.active {
 	margin-bottom: 30px;
 	margin-top: 0px;
 }
-	
+
 .large {
 	font-size: 36px;
 	line-height: 36px;
@@ -500,6 +500,35 @@ fieldset[disabled] .btn-blue.active {
 	margin-top: 0px;
 	line-height: 26px;
 }
+
+.rotate {
+	position: relative;
+}
+
+/* Spinning arrow on intro panel */
+#arrow {
+	width: 100px;
+	min-width: 100px;
+	max-width: 100px;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px;
+	-webkit-animation:spin 1s ease-in-out;
+	-moz-animation:spin 1s ease-in-out;
+	animation:spin 1s ease-in-out;
+}
+	
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
@@ -598,6 +627,12 @@ fieldset[disabled] .btn-blue.active {
 		margin-right: 0px;
 		font-size: 30px;
 		line-height: 46px;
+	}
+	
+	#arrow {
+		width: 80px;
+		min-width: 80px;
+		top: 35px;
 	}
 	
 	.navbar-brand {
@@ -908,7 +943,20 @@ fieldset[disabled] .btn-blue.active {
 	.register-button-block .btn {
 		margin-top: 40px;
 	}
-}
+	
+	.rotate {
+		display: block;
+		position: relative;
+	}
+	
+	/* Spinning arrow on intro panel */
+	#arrow {
+		display: inline-block;
+		width: 100px;
+		min-width: 100px;
+		max-width: 100px;
+		top: 50px;
+	}
 
 /* Text-wrapping around absolute-positioned elements */
 @media only screen and (min-width : 1010px) and (max-width: 1036px) {
