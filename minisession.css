@@ -65,7 +65,11 @@ ul {
 	font-family: "Whitney A", "Whitney B", Whitney, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-}	
+}
+
+ul + p {
+	margin-top: 1em;
+}
 
 .divider {
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
@@ -208,10 +212,6 @@ a:link, a:hover, a:visited, a:active {
 
 .col-sm-6 .btn {
 	margin-top: 0px;
-}
-
-.extra-padding {
-	padding-right: 0px;
 }
 
 .instructor {
@@ -842,10 +842,6 @@ fieldset[disabled] .btn-blue.active {
 		margin-right: 350px;
 	}
 	
-	.extra-padding {
-		padding-right: 0px;
-	}
-	
 	.extended-description .course-top {
 		margin-right: 0px;
 	}
@@ -914,11 +910,8 @@ fieldset[disabled] .btn-blue.active {
 	}
 }
 
-@media only screen and (min-width : 1020px) and (max-width: 1036) {
-	#building .extra-padding {
-		margin-right: 350px;
-	}
-	
+/* Text-wrapping around absolute-positioned elements */
+@media only screen and (min-width : 1010px) and (max-width: 1036px) {
 	.extended-description .course-top {
 		margin-right: 350px;
 	}
@@ -934,9 +927,12 @@ fieldset[disabled] .btn-blue.active {
 	#strategy-course .extended-description .course-top {
 		margin-right: 0px;
 	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
 }
 
-/* Text-wrapping around absolute-positioned elements */
 @media only screen and (min-width : 1037px) and (max-width: 1049px) {
 	#nutrition-course .extended-description .course-top {
 		margin-right: 0px;
