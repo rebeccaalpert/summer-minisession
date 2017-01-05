@@ -137,7 +137,7 @@ ul {
 }
 
 .detail-block {
-	margin-bottom: 5em;
+	margin-bottom: 2em;
 }
 
 .detail-block:last-of-type {
@@ -208,6 +208,10 @@ a:link, a:hover, a:visited, a:active {
 
 .col-sm-6 .btn {
 	margin-top: 0px;
+}
+
+.extra-padding {
+	padding-right: 0px;
 }
 
 .instructor {
@@ -291,19 +295,17 @@ a:link, a:hover, a:visited, a:active {
 	border: none;
 }
 
-.navbar-inverse .navbar-collapse .navbar-form {
-	border: none;
-}
-
 .navbar-custom {
 	background-color: #3172AE;
 	border: none;
-	padding: 0px;
+	padding: 10px;
 }
 
 .navbar-custom #navbar li a {
 	color: #ffffff;
 	font-size: 18px;
+	line-height: 45px;
+	border-bottom: 1px solid transparent;
 }
 
 .navbar-custom #navbar li a:hover {
@@ -325,11 +327,12 @@ a:link, a:hover, a:visited, a:active {
 .navbar-brand {
 	width: 60%;
 	height: auto;
+	min-width: 150px;
 	max-width: 200px;
 }
 
 .navbar-right {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 /* Footer */
@@ -506,12 +509,50 @@ fieldset[disabled] .btn-blue.active {
 	}
 }
 
+/* change navbar collapse breakpoint to include tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 	body {
 		margin-top: 130px;
 	}
-	
+
 	.divider {
 		padding-left: 40px;
 	}
@@ -559,7 +600,7 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.navbar-brand {
-		width: 50%;
+		width: 25%;
 		height: auto;
 		max-width: 400px;
 	}
@@ -629,6 +670,10 @@ fieldset[disabled] .btn-blue.active {
 	body {
 		margin-bottom: 300px;
 		margin-top: 80px;
+	}
+	
+	.navbar-custom #navbar li a {
+		border-bottom: 0px;
 	}
 	
 	#accordion {
@@ -736,7 +781,7 @@ fieldset[disabled] .btn-blue.active {
 	.detail-block, .register-block {
 		margin-bottom: 0em;
 	}
-
+	
 	h1 {
 		font-size: 48px;
 		line-height: 50px;
@@ -796,8 +841,8 @@ fieldset[disabled] .btn-blue.active {
 		margin-right: 350px;
 	}
 	
-	.extended-description .extra-padding {
-		padding-right: 350px;
+	.extra-padding {
+		padding-right: 0px;
 	}
 	
 	.extended-description .course-top {
@@ -811,11 +856,11 @@ fieldset[disabled] .btn-blue.active {
 	.course:last-of-type {
 		margin-bottom: 0px;
 	}
-	
+
 	.course img {
 		display: block;
 		position: absolute;
-		right: 130px;
+		right: 115px;
 		top:-80px;
 		z-index: 1;
 		width: 15%;
@@ -832,7 +877,7 @@ fieldset[disabled] .btn-blue.active {
 		background-color: #ffffff;
 		position: absolute;
 		right: 90px;
-		top: 120px;
+		top: 100px;
 		z-index: 1;
 		box-shadow: 10px 10px 5px #999999;
 		width: 250px;
@@ -864,32 +909,98 @@ fieldset[disabled] .btn-blue.active {
 	}
 }
 
-@media only screen and (min-width: 1090px) {
-	.course-instructor {
-		top: 100px;
+@media only screen and (min-width : 1020px) and (max-width: 1036) {
+	#building .extra-padding {
+		margin-right: 350px;
 	}
-}
-
-@media only screen and (min-width: 1130px) {
+	
 	.extended-description .course-top {
-		margin-right: 325px;
+		margin-right: 350px;
 	}
 	
-	.course-instructor {
-		right: 80px;
-		top: 100px;
+	#museum-course .extended-description .course-top {
+		margin-right: 0px;
 	}
 	
-	.course img {
-		right: 120px;
+	#nutrition-course .extended-description .course-top {
+		margin-right: 0px;
 	}
 	
-	.extended-description .extra-padding {
-		padding-right: 325px;
+	#strategy-course .extended-description .course-top {
+		margin-right: 0px;
 	}
 }
 
-@media only screen and (min-width: 1500px) {
+/* Text-wrapping around absolute-positioned elements */
+@media only screen and (min-width : 1037px) and (max-width: 1049px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 0px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width : 1050px) and (max-width: 1300px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#museum-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#strategy-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#strategy .extra-padding {
+		margin-right: 0px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 500px;
+	}
+}
+
+@media only screen and (min-width: 1501px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#strategy .extra-padding {
+		margin-right: 500px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 500px;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	body {
+		margin-bottom: 400px;
+	}
+	
+	footer {
+		height: 400px;
+	}
+}
+
+@media only screen and (min-width: 1301px) {
 	.course h2 {
 		margin-right: 400px;
 	}
@@ -900,10 +1011,6 @@ fieldset[disabled] .btn-blue.active {
 	
 	.extended-description .course-top {
 		margin-right: 500px;
-	}
-	
-	.extended-description .extra-padding {
-		padding-right: 500px;
 	}
 
 	.course img {
@@ -926,17 +1033,6 @@ fieldset[disabled] .btn-blue.active {
 	.intro h2 {
 		margin-left: 280px;
 		margin-right: 280px;
-	}
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-	body {
-		margin-bottom: 400px;
-	}
-	
-	footer {
-		height: 400px;
 	}
 }
 
