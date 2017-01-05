@@ -550,7 +550,7 @@ fieldset[disabled] .btn-blue.active {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 	body {
-		margin-top: 130px;
+		margin-top: 100px;
 	}
 
 	.divider {
@@ -738,7 +738,7 @@ fieldset[disabled] .btn-blue.active {
 		width: 200px;
 		height: auto;
 		margin-top: 0px;
-		margin-bottom: 20px;
+		margin-bottom: 5px;
 	}
 	
 	.large {
@@ -907,6 +907,10 @@ fieldset[disabled] .btn-blue.active {
 	.panel-body {
 		padding: 20px;
 	}
+	
+	.register-button-block .btn {
+		margin-top: 40px;
+	}
 }
 
 @media only screen and (min-width : 1020px) and (max-width: 1036) {
@@ -993,6 +997,7 @@ fieldset[disabled] .btn-blue.active {
 @media only screen and (min-width : 1200px) {
 	body {
 		margin-bottom: 400px;
+		margin-top: 100px;
 	}
 	
 	footer {
