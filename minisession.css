@@ -383,8 +383,10 @@ footer ul {
 }
 
 footer img {
-	width: 90%;
+	width: 100%;
 	margin-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .footer h3, .footer li {
