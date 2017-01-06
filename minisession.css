@@ -332,10 +332,10 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .navbar-brand {
-	width: 60%;
+	width: 100%;
 	height: auto;
-	min-width: 150px;
-	max-width: 200px;
+	min-width: 50px;
+	max-width: 238px;
 }
 
 .navbar-right {
@@ -534,15 +534,6 @@ fieldset[disabled] .btn-blue.active {
 	
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-	.navbar-brand {
-		width: 50%;
-		height: auto;
-		max-width: 200px;
-	}
-}
-
 /* change navbar collapse breakpoint to include tablets */
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 	.navbar-header {
@@ -553,6 +544,7 @@ fieldset[disabled] .btn-blue.active {
     }
     .navbar-toggle {
         display: block;
+		margin-top: 15px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -676,7 +668,7 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.navbar-brand {
-		width: 25%;
+		width: 100%;
 		height: auto;
 		max-width: 400px;
 	}
@@ -771,11 +763,11 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.navbar-brand {
-		width: 60%;
+		width: 100%;
 		height: auto;
 		margin-left: 15px;
 		padding-top: 0px;
-		margin-top: 15px;
+		margin-top: 16px;
 	}
 	
 	.divider {
