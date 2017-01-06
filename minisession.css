@@ -625,6 +625,11 @@ fieldset[disabled] .btn-blue.active {
 		padding-right: 40px;
 	}
 	
+	#details .content-block {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
 	.intro {
 		padding: 40px;
 	}
@@ -726,6 +731,11 @@ fieldset[disabled] .btn-blue.active {
 		margin-right: 0;
 	}
 	
+	.detail-block { 
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	.long {
 		padding-right: 100px;
 	}
@@ -779,9 +789,9 @@ fieldset[disabled] .btn-blue.active {
 		padding-right: 50px;
 	}
 	
-	.detail-block {
-		padding-left: 0px;
-		padding-right: 30px;
+	#details .content-block {
+		padding-left: 35px;
+		padding-right: 35px;
 	}
 	
 	.detail-block img {
