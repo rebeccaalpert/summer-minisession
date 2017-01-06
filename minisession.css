@@ -30,6 +30,8 @@ h1 {
 	line-height: 36px;
 	margin-bottom: 1em;
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 
 h1:first-of-type {
@@ -46,12 +48,16 @@ h2 {
 	line-height: 36px;
 	margin-bottom: 1em;
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 	
 h3 {
 	font-size: 20px;
 	line-height: 36px;
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 
 p { 
