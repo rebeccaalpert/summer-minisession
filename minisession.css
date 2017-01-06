@@ -1016,6 +1016,12 @@ fieldset[disabled] .btn-blue.active {
 		max-width: 100px;
 		top: 50px;
 	}
+	
+	.col-sm-6 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
 
 /* Text-wrapping around absolute-positioned elements */
 @media only screen and (min-width : 1010px) and (max-width: 1036px) {
