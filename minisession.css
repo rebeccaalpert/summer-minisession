@@ -26,7 +26,7 @@ body {
 
 
 h1 {
-	font-size: 28px;
+	font-size: 24px;
 	line-height: 36px;
 	margin-bottom: 1em;
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
@@ -45,7 +45,7 @@ h1:last-of-type {
 
 h2 {
 	font-size: 22px;
-	line-height: 36px;
+	line-height: 30px;
 	margin-bottom: 1em;
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-style: normal;
@@ -54,7 +54,7 @@ h2 {
 	
 h3 {
 	font-size: 20px;
-	line-height: 36px;
+	line-height: 30px;
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -358,13 +358,9 @@ footer li {
 
 .footer {
 	text-align: center;
-	padding: 40px 0px;
+	padding-top: 40px;
+	padding-top: 40px;
 	background-color: #3172AE;
-}
-
-footer p {
-	color: #cfd8dc;
-	font-size: 14px;
 }
 
 footer h3 {
@@ -387,7 +383,7 @@ footer ul {
 }
 
 footer img {
-	width: 80%;
+	width: 90%;
 	margin-top: 50px;
 }
 
@@ -411,7 +407,7 @@ footer img {
   color: #ffffff; 
   background-color: #3172AE; 
   border: none; 
-  font-size: 20px;
+  font-size: 18px;
 } 
  
 .btn-blue:hover, 
@@ -588,6 +584,37 @@ fieldset[disabled] .btn-blue.active {
 	body {
 		margin-top: 100px;
 	}
+	
+	h1 {
+		font-size: 30px;
+		line-height: 50px;
+		margin-bottom: 50px;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 1em;
+	}
+	
+	h3 {
+		font-size: 22px;
+		line-height: 36px;
+	}
+	
+	p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	ul {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	footer ul {
+		font-size: 18px;
+	}
 
 	.divider {
 		padding-left: 40px;
@@ -668,6 +695,7 @@ fieldset[disabled] .btn-blue.active {
 	
 	.course h2 {
 		margin-top: 0px;
+		margin-right: 80px;
 	}
 	
 	.course-description p:last-of-type {
@@ -701,10 +729,18 @@ fieldset[disabled] .btn-blue.active {
 	.long {
 		padding-right: 100px;
 	}
+	
+	.footer { 
+		height: 400px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.btn-blue {
+		font-size: 20px;
+	}
+	
 	.long {
 		padding-right: 0px;
 	}
@@ -848,6 +884,11 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	ul {
+		font-size: 20px;
+		line-height: 38px;
+	}
+	
+	footer ul {
 		font-size: 20px;
 		line-height: 38px;
 	}
