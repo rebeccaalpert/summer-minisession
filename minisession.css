@@ -5,7 +5,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 450px;
+  margin-bottom: 600px;
   
 }
 .footer {
@@ -13,7 +13,7 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 450px;
+  height: 600px;
   background-color: #303C42;
 }
 
@@ -26,7 +26,7 @@ body {
 
 
 h1 {
-	font-size: 24px;
+	font-size: 30px;
 	line-height: 36px;
 	margin-bottom: 1em;
 	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
@@ -385,8 +385,9 @@ footer ul {
 footer img {
 	width: 100%;
 	margin-top: 50px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 30px;
 }
 
 .footer h3, .footer li {
@@ -394,7 +395,7 @@ footer img {
 }
 
 .footer h3 {
-	margin-top: 60px;
+	margin-top: 30px;
 	margin-left: 40px;
 	margin-right: 40px;
 }
@@ -480,7 +481,7 @@ fieldset[disabled] .btn-blue.active {
 
 .large {
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 40px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-transform: uppercase;
@@ -488,7 +489,7 @@ fieldset[disabled] .btn-blue.active {
 }
 	
 .medium {
-	font-size: 27px;
+	font-size: 30px;
 	line-height: 36px;
 	margin-bottom: 0x;
 	margin-top: 0em;
@@ -534,6 +535,17 @@ fieldset[disabled] .btn-blue.active {
 	
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+/* The tiniest of the tiny cell phones */
+@media only screen and (max-width : 341px) {
+	.navbar-brand {
+		width: 70%;
+		height: auto;
+		margin-left: 0px;
+		padding-top: 0px;
+		margin-top: 20px;
+	}
+}
+	
 /* change navbar collapse breakpoint to include tablets */
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 	.navbar-header {
@@ -578,11 +590,19 @@ fieldset[disabled] .btn-blue.active {
 	body {
 		margin-top: 100px;
 	}
-	
+
 	h1 {
-		font-size: 30px;
-		line-height: 50px;
-		margin-bottom: 50px;
+		font-size: 36px;
+		line-height: 48px;
+		margin-bottom: 0px;
+	}
+	
+	h1:first-of-type {
+		margin-bottom: 0em;
+	}
+	
+	h1:last-of-type {
+		margin-bottom: 30px;
 	}
 
 	h2 {
@@ -677,6 +697,10 @@ fieldset[disabled] .btn-blue.active {
 		margin-top: 40px;
 	}
 	
+	#courses h1:first-of-type {
+		margin-top: 25px;
+	}
+	
 	.course:first-of-type {
 		margin-top: 60px;
 	}
@@ -735,12 +759,328 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.footer { 
-		height: 400px;
+		height: 525px;
+	}
+	
+	#schedule {
+		margin-bottom: 2em;
 	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.navbar-brand {
+		width: 100%;
+		height: auto;
+		margin-left: 15px;
+		padding-top: 0px;
+		margin-top: 16px;
+	}
+	
+	.navbar-custom {
+		padding: 5px;
+	}
+	
+	.navbar-custom #navbar li a {
+		font-size: 16px;
+		line-height: 32px;
+	}
+	
+	body {
+		margin-bottom: 250px;
+	}
+	
+	.content-block:last-of-type {
+		padding-bottom: 0px;
+	}
+	
+	.btn {
+		margin-top: 20px;
+		width: 280px;
+		font-size: 16px;
+	}
+	
+	h1 {
+		font-size: 36px;
+		line-height:40px;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+	
+	h1:last-of-type {
+		margin-bottom: 1em;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 1em;
+	}
+	
+	h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	
+	p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	ul {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	.footer ul {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	/* Hero */
+	.intro {
+		text-align: center;
+		padding-top: 20px;
+	}
+	
+	.intro img {
+		margin-bottom: 30px;
+	}
+	
+	.large {
+		text-align: center;
+		margin-bottom: 0em;
+		line-height: 60px;
+	}
+	
+	.medium {
+		text-align: center;
+	}
+	
+	.intro h1:last-of-type {
+		margin-bottom: 10px;
+	}
+
+	.intro h2 {
+		font-size: 23px;
+		line-height: 36px;
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.intro p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	/* Courses */
+	#courses h1:first-of-type {
+		padding-top: 10px;
+	}
+	
+	.course {
+		margin-bottom: 10em;
+		position: relative;
+	}
+	
+	.course:first-of-type {
+		margin-top: 120px;
+	}
+	
+	.course:last-of-type {
+		margin-bottom: 3em;
+	}
+	
+	.course h2 {
+		margin-right: 350px;
+	}
+	
+	.course-top {
+		margin-right: 350px;
+	}
+	
+	.extended-description .course-top {
+		margin-right: 0px;
+	}
+	
+	.course img {
+		display: block;
+		position: absolute;
+		right: 125px;
+		top:-80px;
+		z-index: 1;
+	}
+	
+	.course-instructor {
+		margin-top: 60px;
+		margin-bottom: 30px;
+		padding: 0px;
+		text-align: left;
+		background-color: #ffffff;
+		position: absolute;
+		right: 70px;
+		top: 50px;
+		z-index: 1;
+		box-shadow: 10px 10px 5px #999999;
+		width: 250px;
+	}
+	
+	.yourEducator {
+		display: block;
+		padding: 15px;
+		padding-left: 30px;
+	}
+	
+	.educatorBio {
+		padding: 30px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	.educatorBio p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	.extraSpace {
+		margin-bottom: 13em;
+	}
+	
+	/* Registration */
+	.register-block {
+		margin-bottom: 1em;
+		margin-top: 1.5em;
+	}
+	
+	.register-button-block .btn {
+		margin-top: 30px;
+	}
+	
+	.footer { 
+		height: 250px;
+	}
+	
+	.footer h3 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.footer img {
+		width: 70%;
+	}
+}
+
+/* Text-wrapping around absolute-positioned elements and device-specific educator panel widths */
+@media only screen and (min-width: 992px) and (max-width: 1011px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+	
+	#museum-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#strategy-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width : 1010px) and (max-width: 1034px) {
+	.extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width : 1035px) and (max-width: 1270px) {
+	.course img {
+		top:-60px;
+	}
+	
+	#nutrition-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#museum-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#strategy-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+	
+	#strategy .extra-padding {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width: 1271px) and (max-width: 1679px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#museum-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#strategy-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#strategy .extra-padding {
+		margin-right: 500px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 500px;
+	}
+	
+	.course img {
+		width: 15%;
+		height: auto;
+		min-width: 100px;
+		max-width:160px;
+		right: 180px;
+	}
+	
+	.course-instructor {
+		right: 70px;
+		top: 60px;
+		width: 400px;
+	}
+	
+	.course h2 {
+		margin-right: 500px;
+	}
+	
+	.course-top {
+		margin-right: 500px;
+	}
+}
+
+/* Larger desktops */
+@media only screen and (min-width : 1680px) {	
+	.navbar-custom {
+		padding: 10px;
+	}
+	
+	.navbar-custom #navbar li a {
+		font-size: 18px;
+		line-height: 45px;
+	}
+	
 	.btn-blue {
 		font-size: 20px;
 	}
@@ -750,7 +1090,7 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	body {
-		margin-bottom: 300px;
+		margin-bottom: 220px;
 		margin-top: 80px;
 	}
 	
@@ -781,6 +1121,10 @@ fieldset[disabled] .btn-blue.active {
 	.content-block {
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+	
+	.content-block:last-of-type {
+		padding-bottom: 0px;
 	}
 	
 	#details .content-block {
@@ -907,7 +1251,11 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.footer {
-		height: 300px;
+		height: 220px;
+	}
+	
+	.footer img {
+		width: 60%;
 	}
 	
 	.course:first-of-type {
@@ -937,7 +1285,7 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.course:last-of-type {
-		margin-bottom: 0px;
+		margin-bottom: 2em;
 	}
 
 	.course img {
@@ -1013,101 +1361,7 @@ fieldset[disabled] .btn-blue.active {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-}
-
-/* Text-wrapping around absolute-positioned elements */
-@media only screen and (min-width : 1010px) and (max-width: 1036px) {
-	.extended-description .course-top {
-		margin-right: 350px;
-	}
 	
-	#museum-course .extended-description .course-top {
-		margin-right: 0px;
-	}
-	
-	#nutrition-course .extended-description .course-top {
-		margin-right: 0px;
-	}
-	
-	#strategy-course .extended-description .course-top {
-		margin-right: 0px;
-	}
-	
-	#building .extra-padding {
-		margin-right: 350px;
-	}
-}
-
-@media only screen and (min-width : 1037px) and (max-width: 1049px) {
-	#nutrition-course .extended-description .course-top {
-		margin-right: 0px;
-	}
-	
-	#building .extra-padding {
-		margin-right: 350px;
-	}
-}
-
-@media only screen and (min-width : 1050px) and (max-width: 1300px) {
-	#nutrition-course .extended-description .course-top {
-		margin-right: 350px;
-	}
-	
-	#museum-course .extended-description .course-top {
-		margin-right: 350px;
-	}
-	
-	#strategy-course .extended-description .course-top {
-		margin-right: 350px;
-	}
-	
-	#building .extra-padding {
-		margin-right: 350px;
-	}
-}
-
-@media only screen and (min-width: 1301px) and (max-width: 1500px) {
-	#nutrition-course .extended-description .course-top {
-		margin-right: 500px;
-	}
-	
-	#strategy .extra-padding {
-		margin-right: 0px;
-	}
-	
-	#building .extra-padding {
-		margin-right: 500px;
-	}
-}
-
-@media only screen and (min-width: 1501px) {
-	#nutrition-course .extended-description .course-top {
-		margin-right: 500px;
-	}
-	
-	#strategy .extra-padding {
-		margin-right: 500px;
-	}
-	
-	#building .extra-padding {
-		margin-right: 500px;
-	}
-}
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-	body {
-		margin-bottom: 400px;
-		margin-top: 100px;
-	}
-	
-	footer {
-		height: 400px;
-	}
-}
-
-@media only screen and (min-width: 1301px) {
 	.course h2 {
 		margin-right: 400px;
 	}
@@ -1122,13 +1376,25 @@ fieldset[disabled] .btn-blue.active {
 
 	.course img {
 		right: 180px;
-		top:-80px;
+		top:-70px;
 	}
 	
 	.course-instructor {
-		right: 90px;
+		right: 70px;
 		top: 130px;
 		width: 400px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	body {
+		margin-bottom: 400px;
+		margin-top: 100px;
+	}
+	
+	footer {
+		height: 400px;
 	}
 }
 
@@ -1141,7 +1407,4 @@ fieldset[disabled] .btn-blue.active {
 		margin-left: 280px;
 		margin-right: 280px;
 	}
-}
-
-@media print {
 }
