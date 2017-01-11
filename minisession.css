@@ -547,7 +547,7 @@ fieldset[disabled] .btn-blue.active {
 }
 	
 /* change navbar collapse breakpoint to include tablets */
-@media only screen and (min-width : 768px) and (max-width : 991px) {
+@media only screen and (min-width : 768px) and (max-width : 950px) {
 	.navbar-header {
         float: none;
     }
@@ -768,7 +768,7 @@ fieldset[disabled] .btn-blue.active {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 930px) {
 	.navbar-brand {
 		width: 100%;
 		height: auto;
@@ -972,7 +972,7 @@ fieldset[disabled] .btn-blue.active {
 }
 
 /* Text-wrapping around absolute-positioned elements and device-specific educator panel widths */
-@media only screen and (min-width: 992px) and (max-width: 1011px) {
+@media only screen and (min-width: 950px) and (max-width: 1011px) {
 	#nutrition-course .extended-description .course-top {
 		margin-right: 350px;
 	}
