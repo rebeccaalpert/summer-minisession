@@ -979,16 +979,32 @@ fieldset[disabled] .btn-blue.active {
 	.footer .btn {
 		display: none;
 	}
+	
+	.footer #link-block-1 {
+		padding-left: 200px;
+	}
+	
+	.footer #link-block-2 {
+		padding-left: 100px;
+	}
 }
 
 /* More desktops */
-@media only screen and (min-width : 1214px) {	
+@media only screen and (min-width : 1200px) {
 	body {
 		margin-bottom: 290px;
 	}
 	
 	.footer { 
 		height: 250px;
+	}
+	
+	.footer #link-block-1 {
+		padding-left: 0px;
+	}
+
+	.footer #link-block-2 {
+		padding-left: 0px;
 	}
 }
 
