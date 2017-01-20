@@ -5,7 +5,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 450px;
+  margin-bottom: 600px;
   
 }
 .footer {
@@ -13,23 +13,23 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 450px;
+  height: 600px;
   background-color: #303C42;
 }
 
 /* Custom page CSS
 -------------------------------------------------- */
 body {
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
-	margin-top: 100px;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
+	margin-top: 110px;
 }
 
 
 h1 {
-	font-size: 28px;
+	font-size: 30px;
 	line-height: 36px;
 	margin-bottom: 1em;
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
@@ -45,38 +45,40 @@ h1:last-of-type {
 
 h2 {
 	font-size: 22px;
-	line-height: 36px;
+	line-height: 30px;
 	margin-bottom: 1em;
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
 	
 h3 {
 	font-size: 20px;
-	line-height: 36px;
-	font-family: "Gotham SSm A", "Gotham SSm B", Gotham, Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
 
 p { 
-	font-family: "Whitney SSm A", "Whitney SSm B", Whitney, Helvetica, Arial, sans-serif;
+	font-family: "Whitney A", "Whitney B", Whitney, Helvetica, Arial, sans-serif;
 	margin-bottom: 1em;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 400;
 }
 
 ul {
-	font-family: "Whitney SSm A", "Whitney SSm B", Whitney, Helvetica, Arial, sans-serif;
+	font-family: "Whitney A", "Whitney B", Whitney, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 400;
-}	
+}
+
+ul + p {
+	margin-top: 1em;
+}
 
 .divider {
-	font-family: "Gotham SSm A", "Gotham SSm B", Whitney, Helvetica, Arial, sans-serif;
+	font-family: "Gotham A", "Gotham B", Gotham, Helvetica, Arial, sans-serif;
 	border-bottom: 1px solid #F38A00;
 	color: #F38A00;
 	font-size: 14px;
@@ -145,7 +147,7 @@ ul {
 }
 
 .detail-block {
-	margin-bottom: 5em;
+	margin-bottom: 2em;
 }
 
 .detail-block:last-of-type {
@@ -265,6 +267,8 @@ a:link, a:hover, a:visited, a:active {
 .panel-heading {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
+
+	cursor: pointer;
 }
 
 .panel-heading > h3 {
@@ -299,19 +303,17 @@ a:link, a:hover, a:visited, a:active {
 	border: none;
 }
 
-.navbar-inverse .navbar-collapse .navbar-form {
-	border: none;
-}
-
 .navbar-custom {
 	background-color: #3172AE;
 	border: none;
-	padding: 0px;
+	padding: 10px;
 }
 
 .navbar-custom #navbar li a {
 	color: #ffffff;
 	font-size: 18px;
+	line-height: 45px;
+	border-bottom: 1px solid transparent;
 }
 
 .navbar-custom #navbar li a:hover {
@@ -331,13 +333,14 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .navbar-brand {
-	width: 60%;
+	width: 100%;
 	height: auto;
-	max-width: 200px;
+	min-width: 50px;
+	max-width: 238px;
 }
 
 .navbar-right {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 /* Footer */
@@ -356,13 +359,9 @@ footer li {
 
 .footer {
 	text-align: center;
-	padding: 40px 0px;
+	padding-top: 40px;
+	padding-top: 40px;
 	background-color: #3172AE;
-}
-
-footer p {
-	color: #cfd8dc;
-	font-size: 14px;
 }
 
 footer h3 {
@@ -385,8 +384,11 @@ footer ul {
 }
 
 footer img {
-	width: 80%;
+	width: 100%;
 	margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 30px;
 }
 
 .footer h3, .footer li {
@@ -394,7 +396,7 @@ footer img {
 }
 
 .footer h3 {
-	margin-top: 60px;
+	margin-top: 30px;
 	margin-left: 40px;
 	margin-right: 40px;
 }
@@ -409,7 +411,7 @@ footer img {
   color: #ffffff; 
   background-color: #3172AE; 
   border: none; 
-  font-size: 20px;
+  font-size: 18px;
 } 
  
 .btn-blue:hover, 
@@ -468,7 +470,7 @@ fieldset[disabled] .btn-blue.active {
 	
 .intro img {
 	width: 40%;
-	height: auto%;
+	height: auto;
 	min-width: 200px;
 	max-width: 200px;
 	-webkit-border-radius: 100%;
@@ -477,10 +479,10 @@ fieldset[disabled] .btn-blue.active {
 	margin-bottom: 30px;
 	margin-top: 0px;
 }
-	
+
 .large {
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 40px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-transform: uppercase;
@@ -488,7 +490,7 @@ fieldset[disabled] .btn-blue.active {
 }
 	
 .medium {
-	font-size: 27px;
+	font-size: 30px;
 	line-height: 36px;
 	margin-bottom: 0x;
 	margin-top: 0em;
@@ -505,13 +507,83 @@ fieldset[disabled] .btn-blue.active {
 	line-height: 26px;
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
+.rotate {
+	position: relative;
+}
+
+/* Spinning arrow on intro panel */
+#arrow {
+	width: 100px;
+	min-width: 100px;
+	max-width: 100px;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px;
+	-webkit-animation:spin 1s ease-in-out;
+	-moz-animation:spin 1s ease-in-out;
+	animation:spin 1s ease-in-out;
+}
+	
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* The tiniest of the tiny cell phones */
+@media only screen and (max-width : 341px) {
 	.navbar-brand {
-		width: 50%;
+		width: 70%;
 		height: auto;
-		max-width: 200px;
+		margin-left: 0px;
+		padding-top: 0px;
+		margin-top: 20px;
 	}
+}
+	
+/* change navbar collapse breakpoint to include tablets */
+@media only screen and (min-width : 768px) and (max-width : 950px) {
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+		margin-top: 15px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -519,7 +591,46 @@ fieldset[disabled] .btn-blue.active {
 	body {
 		margin-top: 100px;
 	}
+
+	h1 {
+		font-size: 36px;
+		line-height: 48px;
+		margin-bottom: 0px;
+	}
 	
+	h1:first-of-type {
+		margin-bottom: 0em;
+	}
+	
+	h1:last-of-type {
+		margin-bottom: 30px;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 1em;
+	}
+	
+	h3 {
+		font-size: 22px;
+		line-height: 36px;
+	}
+	
+	p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	ul {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	footer ul {
+		font-size: 18px;
+	}
+
 	.divider {
 		padding-left: 40px;
 	}
@@ -527,6 +638,11 @@ fieldset[disabled] .btn-blue.active {
 	.content-block {
 		padding-left: 40px;
 		padding-right: 40px;
+	}
+	
+	#details .content-block {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 	
 	.intro {
@@ -543,13 +659,13 @@ fieldset[disabled] .btn-blue.active {
 	
 	/* HERO */
 	.large {
-		font-size: 90px;
+		font-size: 80px;
 		line-height: 80px;
 		font-weight: 700;
 	}
 	
 	.medium {
-		font-size: 70px;
+		font-size: 60px;
 		line-height: 80px;
 		margin-bottom: 0px;
 	}
@@ -563,16 +679,27 @@ fieldset[disabled] .btn-blue.active {
 		margin-left: 0px;
 		margin-right: 0px;
 		font-size: 30px;
+		line-height: 46px;
+	}
+	
+	#arrow {
+		width: 70px;
+		min-width: 70px;
+		top: 40px;
 	}
 	
 	.navbar-brand {
-		width: 50%;
+		width: 100%;
 		height: auto;
 		max-width: 400px;
 	}
 	
 	.divider {
 		margin-top: 40px;
+	}
+	
+	#courses h1:first-of-type {
+		margin-top: 25px;
 	}
 	
 	.course:first-of-type {
@@ -592,6 +719,7 @@ fieldset[disabled] .btn-blue.active {
 	
 	.course h2 {
 		margin-top: 0px;
+		margin-right: 80px;
 	}
 	
 	.course-description p:last-of-type {
@@ -622,20 +750,389 @@ fieldset[disabled] .btn-blue.active {
 		margin-right: 0;
 	}
 	
+	.detail-block { 
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	.long {
 		padding-right: 100px;
+	}
+	
+	.footer { 
+		height: 525px;
+	}
+	
+	#schedule {
+		margin-bottom: 2em;
 	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.navbar-brand {
+		width: 80%;
+		height: auto;
+		margin-left: 15px;
+		padding-top: 0px;
+		margin-top: 16px;
+	}
+	
+	.navbar-custom {
+		padding: 5px;
+	}
+	
+	.navbar-custom #navbar li a {
+		font-size: 14px;
+		line-height: 32px;
+	}
+	
+	body {
+		margin-bottom: 450px;
+	}
+	
+	.divider {
+		font-size: 14px;
+	}
+	
+	.content-block:last-of-type {
+		padding-bottom: 0px;
+	}
+	
+	.btn {
+		margin-top: 20px;
+		width: 280px;
+		font-size: 16px;
+	}
+	
+	h1 {
+		font-size: 36px;
+		line-height:40px;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+	
+	h1:last-of-type {
+		margin-bottom: 1em;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 1em;
+	}
+	
+	h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	
+	p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	ul {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	.footer ul {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	/* Hero */
+	.intro {
+		text-align: center;
+		padding-top: 20px;
+	}
+	
+	.intro img {
+		margin-bottom: 30px;
+	}
+	
+	.large {
+		text-align: center;
+		margin-bottom: 0em;
+		line-height: 60px;
+	}
+	
+	.medium {
+		text-align: center;
+	}
+	
+	.intro h1:last-of-type {
+		margin-bottom: 10px;
+	}
+
+	.intro h2 {
+		font-size: 23px;
+		line-height: 36px;
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.intro p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	
+	/* Courses */
+	#courses h1:first-of-type {
+		padding-top: 10px;
+	}
+	
+	.course {
+		margin-bottom: 10em;
+		position: relative;
+		padding: 40px;
+	}
+	
+	.course:first-of-type {
+		margin-top: 120px;
+	}
+	
+	.course:last-of-type {
+		margin-bottom: 3em;
+	}
+	
+	.course h2 {
+		margin-right: 350px;
+	}
+	
+	.course-top {
+		margin-right: 350px;
+	}
+	
+	.extended-description .course-top {
+		margin-right: 0px;
+	}
+	
+	.course img {
+		display: block;
+		position: absolute;
+		right: 125px;
+		top:-80px;
+		z-index: 1;
+	}
+	
+	.course-instructor {
+		margin-top: 60px;
+		margin-bottom: 30px;
+		padding: 0px;
+		text-align: left;
+		background-color: #ffffff;
+		position: absolute;
+		right: 70px;
+		top: 50px;
+		z-index: 1;
+		box-shadow: 10px 10px 5px #999999;
+		width: 250px;
+	}
+	
+	.yourEducator {
+		display: block;
+		padding: 15px;
+		padding-left: 30px;
+	}
+	
+	.educatorBio {
+		padding: 30px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	.educatorBio p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	.extraSpace {
+		margin-bottom: 13em;
+	}
+	
+	/* Registration */
+	.register-block {
+		margin-bottom: 1em;
+		margin-top: 1.5em;
+	}
+	
+	.register-button-block .btn {
+		margin-top: 30px;
+	}
+	
+	.footer { 
+		height: 400px;
+	}
+	
+	.footer h3 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.footer img {
+		width: 70%;
+	}
+	
+	.footer .btn {
+		display: none;
+	}
+	
+	.footer #link-block-1 {
+		padding-left: 200px;
+	}
+	
+	.footer #link-block-2 {
+		padding-left: 100px;
+	}
+}
+
+/* More desktops */
+@media only screen and (min-width : 1200px) {
+	body {
+		margin-bottom: 290px;
+	}
+	
+	.footer { 
+		height: 250px;
+	}
+	
+	.footer #link-block-1 {
+		padding-left: 0px;
+	}
+
+	.footer #link-block-2 {
+		padding-left: 0px;
+	}
+}
+
+/* Text-wrapping around absolute-positioned elements and device-specific educator panel widths */
+@media only screen and (min-width: 950px) and (max-width: 1011px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+	
+	#museum-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#strategy-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width : 1010px) and (max-width: 1034px) {
+	.extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width : 1035px) and (max-width: 1270px) {
+	.course img {
+		top:-60px;
+	}
+	
+	#nutrition-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#museum-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#strategy-course .extended-description .course-top {
+		margin-right: 350px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 350px;
+	}
+	
+	#strategy .extra-padding {
+		margin-right: 350px;
+	}
+}
+
+@media only screen and (min-width: 1271px) and (max-width: 1679px) {
+	#nutrition-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#museum-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#strategy-course .extended-description .course-top {
+		margin-right: 500px;
+	}
+	
+	#strategy .extra-padding {
+		margin-right: 500px;
+	}
+	
+	#building .extra-padding {
+		margin-right: 500px;
+	}
+	
+	.course img {
+		width: 15%;
+		height: auto;
+		min-width: 100px;
+		max-width:160px;
+		right: 180px;
+	}
+	
+	.course-instructor {
+		right: 70px;
+		top: 60px;
+		width: 400px;
+	}
+	
+	.course h2 {
+		margin-right: 500px;
+	}
+	
+	.course-top {
+		margin-right: 500px;
+	}
+}
+
+/* Larger desktops */
+@media only screen and (min-width : 1680px) {	
+	.navbar-custom {
+		padding: 10px;
+	}
+	
+	.navbar-custom #navbar li a {
+		font-size: 18px;
+		line-height: 45px;
+	}
+	
+	.btn-blue {
+		font-size: 20px;
+	}
+	
 	.long {
 		padding-right: 0px;
 	}
 	
 	body {
-		margin-bottom: 300px;
+		margin-bottom: 220px;
 		margin-top: 80px;
+	}
+	
+	.navbar-custom #navbar li a {
+		border-bottom: 0px;
 	}
 	
 	#accordion {
@@ -643,11 +1140,11 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.navbar-brand {
-		width: 60%;
+		width: 100%;
 		height: auto;
 		margin-left: 15px;
 		padding-top: 0px;
-		margin-top: 15px;
+		margin-top: 16px;
 	}
 	
 	.divider {
@@ -663,9 +1160,13 @@ fieldset[disabled] .btn-blue.active {
 		padding-right: 50px;
 	}
 	
-	.detail-block {
-		padding-left: 0px;
-		padding-right: 30px;
+	.content-block:last-of-type {
+		padding-bottom: 0px;
+	}
+	
+	#details .content-block {
+		padding-left: 35px;
+		padding-right: 35px;
 	}
 	
 	.detail-block img {
@@ -700,7 +1201,7 @@ fieldset[disabled] .btn-blue.active {
 		width: 200px;
 		height: auto;
 		margin-top: 0px;
-		margin-bottom: 20px;
+		margin-bottom: 5px;
 	}
 	
 	.large {
@@ -743,7 +1244,7 @@ fieldset[disabled] .btn-blue.active {
 	.detail-block, .register-block {
 		margin-bottom: 0em;
 	}
-
+	
 	h1 {
 		font-size: 48px;
 		line-height: 50px;
@@ -772,6 +1273,11 @@ fieldset[disabled] .btn-blue.active {
 		line-height: 38px;
 	}
 	
+	footer ul {
+		font-size: 20px;
+		line-height: 38px;
+	}
+	
 	.round {
 		width: 183px;
 		height: 183px;
@@ -782,7 +1288,11 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.footer {
-		height: 300px;
+		height: 220px;
+	}
+	
+	.footer img {
+		width: 60%;
 	}
 	
 	.course:first-of-type {
@@ -793,7 +1303,18 @@ fieldset[disabled] .btn-blue.active {
 		margin-bottom: 10em;
 		position: relative;
 		padding: 60px;
-		padding-right: 600px;
+	}
+	
+	.course h2 {
+		margin-right: 350px;
+	}
+	
+	.course-top {
+		margin-right: 350px;
+	}
+	
+	.extended-description .course-top {
+		margin-right: 0px;
 	}
 	
 	.extraSpace {
@@ -801,13 +1322,13 @@ fieldset[disabled] .btn-blue.active {
 	}
 	
 	.course:last-of-type {
-		margin-bottom: 0px;
+		margin-bottom: 2em;
 	}
-	
+
 	.course img {
 		display: block;
 		position: absolute;
-		right: 190px;
+		right: 115px;
 		top:-80px;
 		z-index: 1;
 		width: 15%;
@@ -823,11 +1344,11 @@ fieldset[disabled] .btn-blue.active {
 		text-align: left;
 		background-color: #ffffff;
 		position: absolute;
-		right: 100px;
-		top: 120px;
+		right: 90px;
+		top: 100px;
 		z-index: 1;
 		box-shadow: 10px 10px 5px #999999;
-		width: 400px;
+		width: 250px;
 	}
 	
 	.yourEducator {
@@ -854,6 +1375,58 @@ fieldset[disabled] .btn-blue.active {
 	.panel-body {
 		padding: 20px;
 	}
+	
+	.register-button-block .btn {
+		margin-top: 40px;
+	}
+	
+	.rotate {
+		display: block;
+		position: relative;
+	}
+	
+	/* Spinning arrow on intro panel */
+	#arrow {
+		display: inline-block;
+		width: 100px;
+		min-width: 100px;
+		max-width: 100px;
+		top: 50px;
+	}
+	
+	.col-sm-6 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.course h2 {
+		margin-right: 400px;
+	}
+	
+	.course-top {
+		margin-right: 500px;
+	}
+	
+	.extended-description .course-top {
+		margin-right: 500px;
+	}
+
+	.course img {
+		right: 180px;
+		top:-70px;
+	}
+	
+	.course-instructor {
+		right: 70px;
+		top: 130px;
+		width: 400px;
+	}
+}
+
+@media only screen and (min-width:1600px) {	
+	body {
+		margin-bottom: 300px;
+	}
 }
 
 @media only screen and (min-width:1900px) {	
@@ -865,18 +1438,4 @@ fieldset[disabled] .btn-blue.active {
 		margin-left: 280px;
 		margin-right: 280px;
 	}
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-	body {
-		margin-bottom: 400px;
-	}
-	
-	footer {
-		height: 400px;
-	}
-}
-
-@media print {
 }
